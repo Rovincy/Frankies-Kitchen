@@ -1,0 +1,23 @@
+ ListView(
+              children: [
+                DropdownSearch<String>(
+                  mode: Mode.MENU,
+                  showSelectedItems: true,
+                  items: items.toList(),
+                  dropdownSearchDecoration: InputDecoration(
+                    labelText: "Location",
+                    hintText: "Please select your kitchen below",
+                  ),
+                  // popupItemDisabled: isItemDisabled,
+                  onChanged: (value) {
+                    // context.read<Model>().getUserLocation(value);
+                    // print()
+                  },
+                  //selectedItem: "",
+                  showSearchBox: true,
+                  searchFieldProps: TextFieldProps(
+                    cursorColor: Colors.blue,
+                  ),
+                ),
+              ],
+            ),
